@@ -118,3 +118,25 @@
     background:#333;
     color:#fff;
 }
+
+/* =======================================
+   মোবাইলের জন্য রেসপনসিভ সিএসএস (নতুন যুক্ত অংশ)
+   ======================================= */
+@media (max-width: 768px) {
+    .project {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* ৩টি কলামের বদলে মোবাইলে ১টি কলাম হবে */
+        gap: 25px;
+        justify-items: center; /* কার্ডগুলোকে স্ক্রিনের মাঝখানে এলাইন করবে */
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 340px; /* সার্ভিস কার্ডের সাথে মিল রেখে সাইজ ঠিক করা হলো */
+    }
+}
+
